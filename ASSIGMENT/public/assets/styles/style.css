@@ -1,0 +1,151 @@
+body, h1, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+nav {
+  background-color: #444;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+#canvasContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  position: relative; 
+}
+
+#aadhaarCanvas {
+  background-color: #db0e0e; 
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; 
+}
+#panCanvas {
+  background-color: #ffe6e6; 
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; 
+}
+#dlCanvas {
+  background-color: #ffe6e6; 
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; 
+}
+
+#downloadButton {
+  margin-top: 10px;
+  padding: 10px ;
+  background-color: #ff83d6; 
+  color: white;
+  left: 23cm;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative; 
+  width: 10%;
+}
+
+#downloadButton:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  #aadhaarCanvas {
+      width: 90%; 
+  }
+
+  #downloadButton {
+      
+      text-align: center;
+  }
+}
+.tit{
+  color: red;
+  margin-top: 0.5cm;
+}
+
+.delete-btn {
+  color: rgba(249, 196, 215, 1);
+  margin-top: 2px;
+}
+
+.delete-btn:hover {
+  background-color: red;
+  color: #ede5e5;
+}
+
+.view-btn {
+  color: lightgreen;
+}
+
+.view-btn:hover {
+  background-color: lightgreen;
+  color: #333;
+}
+
+.edit-btn {
+  color: yellow;
+}
+
+.edit-btn:hover {
+  color: black;
+  background-color: yellow;
+}
